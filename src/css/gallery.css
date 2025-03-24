@@ -1,14 +1,15 @@
-.gallery-list {
+.gallery {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 24px;
+  margin-bottom: 16px;
 }
 
 .gallery-item {
+  width: 360px;
   border: 1px solid black;
-  object-fit: cover;
   transition: 300ms ease-in-out;
 }
 
@@ -17,8 +18,9 @@
 }
 
 .gallery-img {
-  width: 360px;
+  margin: 0 auto;
   height: 200px;
+  object-fit: cover;
 }
 
 .gallery-item-desc {
@@ -26,6 +28,11 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
+}
+
+.gallery-load-more-btn {
+  display: block;
+  margin: 0 auto;
 }
 
 .loader {
@@ -60,4 +67,8 @@
   to {
     background-position: 150% 0%;
   }
+}
+
+.is-hidden {
+  display: none;
 }
